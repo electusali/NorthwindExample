@@ -1,0 +1,58 @@
+﻿
+@{
+	ViewData["Title"] = "Add";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+	<title>Product</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header"><h5 class="modal-title">URUN EKLE</h5></div>
+			<div class="card-body">
+				<form method="post" asp-action="Add" asp-controller="Product">
+					<div class="mb-3">
+						<label>Category Id</label>
+						<div class="form-group">
+							<input type="number" name="CategoryId" class="form-control" placeholder="categoryId" />
+						</div>
+					</div>
+					<div class="mb-3">
+						<label>Product Name</label>
+						<div class="form-group">
+							<input type="text" name="ProductName" class="form-control" placeholder="categoryId" />
+						</div>
+					</div>
+					<div class="mb-3">
+						<label>Unit Price</label>
+						<div class="form-group">
+							<input type="number" name="UnitPrice" class="form-control" placeholder="categoryId" />
+						</div>
+					</div>
+					<div class="mb-3">
+						<label>Unit Stok</label>
+						<div class="form-group">
+							<input type="number" name="UnitsInStock" class="form-control" placeholder="categoryId" />
+						</div>
+					</div>
+					<div class="form-group">
+						<button   class="btn btn-success"  >Add</button>
+ 					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+

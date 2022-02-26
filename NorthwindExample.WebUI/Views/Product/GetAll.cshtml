@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+}
+@using NorthwindExample.Enties.Concrete
+@model List<Product>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+		<title>Product</title>
+	</head>
+<body>
+
+<div class="container">
+	<div class="p-5 w-50 m-0">
+		<a href="/Product/Add" class="btn btn-success">Add Product</a>
+	</div>
+	<br/>
+	<table class="table table-bordered">
+		<tr>
+			<td>Id</td>
+			<td>Category Id</td>
+			<td>Ad</td>
+			<td>Birim Fiyati</td>
+			<td>Stok</td>
+		</tr>
+		@foreach (var item in Model)
+		{
+	<tr>
+		<td>@item.ProductId</td>
+		<td>@item.CategoryId</td>
+		<td>@item.ProductName</td>
+		<td>@item.UnitPrice</td>
+		<td>@item.UnitsInStock</td>
+	</tr>
+		}
+	</table>
+</div>
+</body>
+</html>

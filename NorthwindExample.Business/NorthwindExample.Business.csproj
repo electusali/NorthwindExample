@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contans\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NorthwindExample.DataAccess\NorthwindExample.DataAccess.csproj" />
+    <ProjectReference Include="..\NorthwindExample.Enties\NorthwindExample.Enties.csproj" />
+  </ItemGroup>
+
+</Project>
